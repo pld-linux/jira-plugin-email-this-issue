@@ -2,17 +2,18 @@
 %include	/usr/lib/rpm/macros.java
 Summary:	JIRA "Email this issue" plugin
 Name:		jira-plugin-%{plugin}
-Version:	1.8
+Version:	1.7.1
 Release:	1
 Epoch:		1
 License:	BSD
 Group:		Libraries/Java
 Source0:	https://studio.plugins.atlassian.com/wiki/download/attachments/2261441/email-this-issue-plugin-%{version}.jar
-# Source0-md5:	9290b62d79d257c58b5661b74dbbc4b0
+# Source0-md5:	82e7badb87f6563cce1c48e989070d4f
 URL:		https://plugins.atlassian.com/plugin/details/4977
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	jira >= 4.1.1-2
+Requires:	jira >= 4.0
+Requires:	jira < 4.1
 Obsoletes:	jira-enterprise-plugin-email-this-issue
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
