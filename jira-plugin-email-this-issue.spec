@@ -1,5 +1,4 @@
 %define		plugin	email-this-issue
-%include	/usr/lib/rpm/macros.java
 Summary:	JIRA "Email this issue" plugin
 Name:		jira-plugin-%{plugin}
 Version:	1.8
